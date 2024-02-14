@@ -8,6 +8,7 @@
     <style>
         body {
             background-color: black;
+            padding-top: 70px;
         }
         .hidden {
             display: none;
@@ -31,7 +32,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">AssureLife</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -98,37 +99,51 @@
         <div id="policiesSection" class="insurance-section">
             <h2>Our Policies</h2>
             <div class="row">
+                <!-- Basic Policy Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Basic</h5>
                             <p class="card-text">Coverage amount: 100 Ether</p>
-                            <a href="#" class="btn btn-primary">Select Basic</a>
+                            <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#basicPolicyDesc">More Info</a>
                         </div>
                     </div>
+                    <div id="basicPolicyDesc" class="collapse">
+                        <p>A foundational coverage option designed for essential protection. Ideal for individuals seeking basic financial security.</p>
+                    </div>
                 </div>
+                <!-- Comprehensive Policy Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Comprehensive</h5>
                             <p class="card-text">Coverage amount: 200 Ether</p>
-                            <a href="#" class="btn btn-primary">Select Comprehensive</a>
+                            <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#comprehensivePolicyDesc">More Info</a>
                         </div>
                     </div>
+                    <div id="comprehensivePolicyDesc" class="collapse">
+                        <p>Extended coverage for those seeking higher protection levels. Covers a wide range of potential risks for peace of mind.</p>
+                    </div>
                 </div>
+                <!-- Enhanced Policy Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Enhanced</h5>
                             <p class="card-text">Coverage amount: 500 Ether</p>
-                            <a href="#" class="btn btn-primary">Select Enhanced</a>
+                            <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#enhancedPolicyDesc">More Info</a>
                         </div>
+                    </div>
+                    <div id="enhancedPolicyDesc" class="collapse">
+                        <p>Our premium option offering the highest level of coverage. Designed for those who require comprehensive financial protection and security.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
 
     <script>
