@@ -15,3 +15,5 @@
 - Load the application on the browser.
 
 - Fetch information about the customer, pay premium, initiate claim, change coverage amount, view insurance policies.
+
+Presentation link: https://tome.app/magic-b995/lifeassurecoin-revolutionizing-life-insurance-with-blockchain-clsdv4jvs007opu6a194x36lz
