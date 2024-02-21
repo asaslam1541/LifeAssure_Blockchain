@@ -4,7 +4,7 @@
 
 - Compile contract on Remix IDE.
 
-- Connec to MetaMask and Deploy contract
+- Connect to MetaMask and Deploy contract
 
 - Insert Customer information.
 
